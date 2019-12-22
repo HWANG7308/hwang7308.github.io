@@ -1,1 +1,1 @@
-Hi! This is my personal website.
+Hi! This is my personal wedsite.
