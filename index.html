@@ -249,7 +249,9 @@
     <div id='footer' class='vspace-top'>
         <center>
             <script language=Javascript>
-                document.write("Last Updated: " + document.lastModified)
+                var dd = document.lastModified;
+                var pp = new Date(dd);
+                document.write("Last Updated: " + pp.getFullYear() + "-" + (pp.getMonth() + 1) + "-" + pp.getDate());
             </script>
         </center>
     </div>
