@@ -1,3 +1,5 @@
 Hi! This is my personal wedsite.
 
-Credit to https://github.com/vsitzmann/vsitzmann.github.io
+Based on https://github.com/vsitzmann/vsitzmann.github.io
+
+Some icons from Fontawesome and Academicons
