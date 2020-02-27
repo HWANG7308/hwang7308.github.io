@@ -54,7 +54,8 @@
             font-size: 20px;
         }
         .vspace-top {
-            margin-top: 30px;
+            /* margin-top: 30px; */
+            padding-top: 60px;
         }
         .vspace-top-news {
             margin-top: 15px;
@@ -71,35 +72,36 @@
         .paper-authors {
             font-style: italic;
         }
+        
         /* Add a black background color to the top navigation */
         .topnav {
-        background-color: #002133;
-        overflow: hidden;
-        position: fixed;
-        width: 100%;
-        z-index: 99999;
+            background-color: #002133;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            z-index: 999;
         }
 
         /* Style the links inside the navigation bar */
         .topnav a {
-        float: right;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
+            float: right;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
         }
 
         /* Change the color of links on hover */
         .topnav a:hover {
-        background-color: #ddd;
-        color: black;
+            background-color: #ddd;
+            color: black;
         }
 
         /* Add a color to the active/current link */
         .topnav a.active {
-        background-color: #ddd;
-        color: black;
+            background-color: #ddd;
+            color: black;
         }
     </style>
 </head>
@@ -107,11 +109,11 @@
 <body>
     <div class="topnav">
         <div class='container'>
-            <a href="#about">About</a>
             <a href="#contact">Contact</a>
             <a href="#research">Research</a>
             <!-- <a href="#publications">Publications</a> -->
             <a href="#news">News</a>
+            <a href="./subpage/aboutme.html#about">About</a>
             <a href="#header">Home</a>
         </div>
     </div>
@@ -141,7 +143,7 @@
                         <a href="https://github.com/HWANG7308">[GitHub]</a>
                         <a href="https://www.linkedin.com/in/%E7%81%8F-%E7%8E%8B-31a876a2/?locale=en_US">[LinkedIn]</a>
                         <!-- <a href="https://twitter.com/vincesitzmann">[Twitter]</a> -->
-                        <a href="https://hwang7308.github.io/pdfs/CV-Hao-Wang.pdf">[CV]</a>
+                        <a href="./pdfs/CV-Hao-Wang.pdf">[CV]</a>
                     </div>
                 </div>
             </div>
@@ -152,128 +154,128 @@
         <div class='row vspace-top'>
             <div class='col offset-sm-1'>
                 <h1>Bio</h1>
-                <p>
-                    Hi! I am Hao Wang, currently a research intern at the Center for Biometrics and Security Research & National Laboratory of Pattern Recognition, Institute of Automation of the Chinese Academy of Sciences. My research interests are in 3D Vision and Graphics. <br />
-                    <br />
-                    I have background in signal and image processing, embedded system, machine learning, computer vision, and natural language processing. In 2019, I received my MSc with Distinction in <a href="https://www.ed.ac.uk/files/atoms/files/pgb-informatics-2018.pdf#page=5">Informatics</a> from <a href="https://www.ed.ac.uk/">The University of Edinburgh</a>, supervised by <a href="http://homepages.inf.ed.ac.uk/rbf/">Prof. Bob Fisher</a>. In 2018, I received my B.Eng. in Telecommunication Engineering from <a href="https://www.bupt.edu.cn/">Beijing University of Posts and Telecommunications</a>. <br />
-                    <br />
-                    I am also an aspiring musician and <a href="https://www.instagram.com/_1wanghao1_/">photographer</a>.
-                </p>
+                <div>
+                    <p>
+                        Hi! I am Hao Wang, currently a research intern at the Center for Biometrics and Security Research & National Laboratory of Pattern Recognition, Institute of Automation of the Chinese Academy of Sciences. My research interestsare in 3D Vision and Graphics.
+                        <br />
+                        <br />
+                        I have background in signal and image processing, embedded system, machine learning, computer vision, and naturallanguage processing.
+                        In 2019, I received my MSc with Distinction in <a href="https://www.ed.ac.uk/files/atoms/files/pgb-informatics-2018.pdf#page=5">Informatics</a> from <a href="https://www.ed.ac.uk/">The University of Edinburgh</a>, supervised by <a href="https://homepages.inf.ed.ac.uk/rbf/">Prof. Bob Fisher</a>.
+                        In 2018, I received my B.Eng. in Telecommunication Engineering from <a href="https://www.bupt.edu.cn/">Beijing University of Posts and Telecommunications</a>.
+                        <br />
+                        <br />
+                        I am also an aspiring musician and <a href="https://www.instagram.com/_1wanghao1_/">photographer</a>.
+                    </p>
+                </div>
 
-                <!-- List of updates -->
+                <!-- List of news -->
                 <div id='news' class='vspace-top'>
                     <h1>News</h1>
-                </div>
-
-                <div style="overflow:auto; height:180px;">
-                    <div class='row vspace-top-news'>
-                        <div class="col-sm-2 news-date">
-                            November 2019
+                    <div style="overflow:auto; height:180px;">
+                        <div class='row vspace-top-news'>
+                            <div class="col-sm-2 news-date">
+                                November 2019
+                            </div>
+                            <div class="col">
+                                Receive my MSc with Distinction in Informatics!
+                            </div>
                         </div>
-                        <div class="col">
-                            Receive my MSc with Distinction in Informatics!
+                        <div class='row vspace-top-news'>
+                            <div class="col-sm-2 news-date">
+                                October 2019
+                            </div>
+                            <div class="col">
+                                I will join <a href="http://www.cbsr.ia.ac.cn/users/xiangyuzhu/">Prof. Xiangyu Zhu</a>'s group at Center for
+                                Biometrics and Security Research, National Laboratory of Pattern Recognition, Institute of Automation of the
+                                Chinese Academy of Sciences, and work on 3D face reconstruction.
+                            </div>
                         </div>
-                    </div>
-
-                    <div class='row vspace-top-news'>
-                        <div class="col-sm-2 news-date">
-                            October 2019
+                        <div class='row vspace-top-news'>
+                            <div class="col-sm-2 news-date">
+                                September 2018
+                            </div>
+                            <div class="col">
+                                Start my MSc in Informatics at The University of Edinburgh!
+                            </div>
                         </div>
-                        <div class="col">
-                            I will join <a href="http://www.cbsr.ia.ac.cn/users/xiangyuzhu/">Prof. Xiangyu Zhu</a>'s group at Center for Biometrics and Security Research, National Laboratory of Pattern Recognition, Institute of Automation of the Chinese Academy of Sciences, and work on 3D face reconstruction.
+                        <div class='row vspace-top-news'>
+                            <div class="col-sm-2 news-date">
+                                June 2018
+                            </div>
+                            <div class="col">
+                                Receive my B.Eng in Telecommunication Engineering!
+                            </div>
                         </div>
-                    </div>
-
-                    <div class='row vspace-top-news'>
-                        <div class="col-sm-2 news-date">
-                            September 2018
-                        </div>
-                        <div class="col">
-                            Start my MSc in Informatics at The University of Edinburgh!
-                        </div>
-                    </div>
-
-                    <div class='row vspace-top-news'>
-                        <div class="col-sm-2 news-date">
-                            June 2018
-                        </div>
-                        <div class="col">
-                            Receive my B.Eng in Telecommunication Engineering!
-                        </div>
-                    </div>
-
-                    <div class='row vspace-top-news'>
-                        <div class="col-sm-2 news-date">
-                            September 2014
-                        </div>
-                        <div class="col">
-                            Start my uni life at Beijing University of Posts and Telecommunications!
+                        <div class='row vspace-top-news'>
+                            <div class="col-sm-2 news-date">
+                                September 2014
+                            </div>
+                            <div class="col">
+                                Start my uni life at Beijing University of Posts and Telecommunications!
+                            </div>
                         </div>
                     </div>
                 </div>
-
+                
                 <!-- List of publications -->
                 <!-- <div id='publications' class='vspace-top'>
-                    <h1>Publications</h1>
-                </div>
-
-                <div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <img src='imgs/SRNs.gif' class='img-fluid'>
-                    </div>
-                    <div class="col">
-                        <div class='paper-title'>
-                            Scene Representation Networks: Continuous 3D-Structure-Aware Neural Scene Representations
+                    <h1>Publication</h1>
+                    <div class='row vspace-top'>
+                        <div class="col-sm-3">
+                            <img src='imgs/SRNs.gif' class='img-fluid'>
                         </div>
-                        <div class='paper-desc'>
-                            NeurIPS 2019 (Oral, <b>Honorable Mention "Outstanding New Directions"</b>)
-                        </div>
-                        <div class='paper-authors'>
-                            <u>Vincent Sitzmann</u>, Michael Zollhöfer, Gordon Wetzstein
-                        </div>
-                        <div>
-                            <a href="http://vsitzmann.github.io/srns/">[Project page]</a>
-                            <a href="http://arxiv.org/abs/1906.01618">[Preprint]</a>
-                            <a href="https://github.com/vsitzmann/scene-representation-networks">[Code]</a>
+                        <div class="col">
+                            <div class='paper-title'>
+                                Scene Representation Networks: Continuous 3D-Structure-Aware Neural Scene Representations
+                            </div>
+                            <div class='paper-desc'>
+                                NeurIPS 2019 (Oral, <b>Honorable Mention "Outstanding New Directions"</b>)
+                            </div>
+                            <div class='paper-authors'>
+                                <u>Vincent Sitzmann</u>, Michael Zollhöfer, Gordon Wetzstein
+                            </div>
+                            <div>
+                                <a href="http://vsitzmann.github.io/srns/">[Project page]</a>
+                                <a href="http://arxiv.org/abs/1906.01618">[Preprint]</a>
+                                <a href="https://github.com/vsitzmann/scene-representation-networks">[Code]</a>
+                            </div>
                         </div>
                     </div>
                 </div> -->
 
                 <!-- List of research projects -->
                 <div id='research' class='vspace-top'>
-                    <h1>Research Highlights</h1>
-                </div>
-
-                <div class='row vspace-top'>
-                    <div class="col-sm-3">
-                      <img src='dissertation/msc/msc.png' class='img-fluid'>
+                    <h1>Research Highlight</h1>
+                    <div class='row vspace-top-news'>
+                        <div class="col-sm-3">
+                            <img src='dissertation/msc/msc.png' class='img-fluid'>
+                        </div>
+                        <div class="col">
+                            <div class='paper-title'>
+                                Gender Identification from 3D Facial Surface Model
+                            </div>
+                            <div class='paper-desc'>
+                                Dissertation for Master’s degree
+                            </div>
+                            <div>
+                                <a href="https://hwang7308.github.io/dissertation/msc/abstract.html">[Abstract]</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <div class='paper-title'>
-                          Gender Identification from 3D Facial Surface Model
+                    <div class='row vspace-top-news'>
+                        <div class="col-sm-3">
+                            <img src='dissertation/beng/beng.png' class='img-fluid'>
                         </div>
-                        <div class='paper-desc'>
-                            Dissertation for Master’s degree
-                        </div>
-                        <div>
-                            <a href="https://hwang7308.github.io/dissertation/msc/abstract.html">[Abstract]</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class='row vspace-top'>
-                    <div class="col-sm-3">
-                        <img src='dissertation/beng/beng.png' class='img-fluid'>
-                    </div>
-                    <div class="col">
-                        <div class='paper-title'>
-                            Realization of Image Super-Resolution by Implementing Convolutional Neural Network on Sub-pixel
-                        </div>
-                        <div class='paper-desc'>
-                            Dissertation for Bachelor’s degree
-                        </div>
-                        <div>
-                            <a href="https://hwang7308.github.io/dissertation/beng/abstract.html">[Abstract]</a>
+                        <div class="col">
+                            <div class='paper-title'>
+                                Realization of Image Super-Resolution by Implementing Convolutional Neural Network on Sub-pixel
+                            </div>
+                            <div class='paper-desc'>
+                                Dissertation for Bachelor’s degree
+                            </div>
+                            <div>
+                                <a href="https://hwang7308.github.io/dissertation/beng/abstract.html">[Abstract]</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -281,12 +283,16 @@
                 <!-- List of contact information -->
                 <div id='contact' class='vspace-top'>
                     <h1>Contact</h1>
+                    <p>
+                        Feel free to get in touch!
+                        You can <a href="jackw7308@gmail.com">email</a> me, or through <a href="#header">the other ways</a> listed above.
+                    </p>
                 </div>
-                <p>
-                    Feel free to get in touch!<br />
-                    <br />
-                    You can <a href="jackw7308@gmail.com">email</a> me, or through <a href="#header">the other ways</a> listed above.
-                </p>
+
+                <!-- Back to top -->
+                <div id='contact' class='vspace-top'>
+                    <a href="#header" style="display: block; text-align: right;">[Back to top]</a>
+                </div>
             </div>
         </div>
     </div>
