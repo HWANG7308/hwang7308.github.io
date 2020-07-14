@@ -1,226 +1,205 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Hao Wang</title>
+    <head>
+        <title>Hao Wang</title>
 
-    <!-- Meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+        <!-- Meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Bootstrap CSS -->
+        <link href="../css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Page icon -->
-    <link rel="icon" href="../imgs/icon.ico" type="image/x-icon" />
+        <!-- Page icon -->
+        <link rel="icon" href="../imgs/icon.ico" type="image/x-icon" />
 
-    <!-- Icons from Fontawesome & Academicons -->
-    <script
-      src="https://kit.fontawesome.com/0575f02792.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="../academicons/css/academicons.min.css" />
+        <!-- Icons from Fontawesome & Academicons -->
+        <script src="https://kit.fontawesome.com/0575f02792.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../academicons/css/academicons.min.css" />
 
-    <!-- Custom Styles -->
-    <style>
-      body {
-        font-family: "sans-serif";
-        font-size: 16px;
-        background-color: #ffffff;
-        color: #4f6071;
-      }
-      #header {
-        background-color: #f4f4f4;
-        /*background-color: #FFFFFF;*/
-        display: flex;
-        align-items: flex-end;
-        padding-top: 105px;
-        padding-bottom: 60px;
-      }
-      #footer {
-        background-color: #f4f4f4;
-        padding: 10px;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-      }
-      #portrait {
-        border: 3px solid white;
-      }
-      #header-text {
-        margin-top: 60px;
-        margin-left: 220px;
-      }
-      #header-text-name {
-        font-size: 40px;
-      }
-      #header-text-status {
-        font-size: 15px;
-      }
-      #header-text-email {
-        font-size: 20px;
-        font-style: italic;
-      }
-      .header-text-desc {
-        font-size: 20px;
-      }
-      .vspace-top {
-        /* margin-top: 30px; */
-        padding-top: 60px;
-      }
-      .vspace-top-news {
-        margin-top: 15px;
-      }
-      .paper-image {
-        width: 150px;
-      }
-      .news-date {
-        font-weight: bold;
-      }
-      .paper-title {
-        font-weight: bold;
-      }
-      .paper-authors {
-        font-style: italic;
-      }
+        <!-- Custom Styles -->
+        <style>
+            body {
+                font-family: "sans-serif";
+                font-size: 16px;
+                background-color: #ffffff;
+                color: #4f6071;
+            }
+            #header {
+                background-color: #f4f4f4;
+                /*background-color: #FFFFFF;*/
+                display: flex;
+                align-items: flex-end;
+                padding-top: 105px;
+                padding-bottom: 60px;
+            }
+            #footer {
+                background-color: #f4f4f4;
+                padding: 10px;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+            }
+            #portrait {
+                border: 3px solid white;
+            }
+            #header-text {
+                margin-top: 60px;
+                margin-left: 220px;
+            }
+            #header-text-name {
+                font-size: 40px;
+            }
+            #header-text-status {
+                font-size: 15px;
+            }
+            #header-text-email {
+                font-size: 20px;
+                font-style: italic;
+            }
+            .header-text-desc {
+                font-size: 20px;
+            }
+            .vspace-top {
+                /* margin-top: 30px; */
+                padding-top: 60px;
+            }
+            .vspace-top-news {
+                margin-top: 15px;
+            }
+            .paper-image {
+                width: 150px;
+            }
+            .news-date {
+                font-weight: bold;
+            }
+            .paper-title {
+                font-weight: bold;
+            }
+            .paper-authors {
+                font-style: italic;
+            }
 
-      /* Add a black background color to the top navigation */
-      .topnav {
-        background-color: #002133;
-        overflow: hidden;
-        position: fixed;
-        width: 100%;
-        z-index: 999;
-      }
+            /* Add a black background color to the top navigation */
+            .topnav {
+                background-color: #002133;
+                overflow: hidden;
+                position: fixed;
+                width: 100%;
+                z-index: 999;
+            }
 
-      /* Style the links inside the navigation bar */
-      .topnav a {
-        float: right;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
+            /* Style the links inside the navigation bar */
+            .topnav a {
+                float: right;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
 
-      /* Change the color of links on hover */
-      .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-      }
+            /* Change the color of links on hover */
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
 
-      /* Add a color to the active/current link */
-      .topnav a.active {
-        background-color: #ddd;
-        color: black;
-      }
-    </style>
-  </head>
+            /* Add a color to the active/current link */
+            .topnav a.active {
+                background-color: #ddd;
+                color: black;
+            }
+        </style>
+    </head>
 
-  <body>
-    <div class="topnav">
-      <div class="container">
-        <a href="./contact.html">Contact</a>
-        <a href="#about">About Me</a>
-        <a href="../index.html#research">Research</a>
-        <!-- <a href="#publications">Publications</a> -->
-        <a href="../index.html#news">News</a>
-        <a href="../index.html">Home</a>
-      </div>
-    </div>
-
-    <div id="about" class="container">
-      <div class="row vspace-top">
-        <div class="col offset-sm-1">
-          <div class="vspace-top">
-            <h1>About Me</h1>
-          </div>
-          <div class="vspace-top">
-            <div class="row vspace-top-news">
-              <div class="col-sm-2 news-date">
-                Education
-              </div>
-              <div class="col">
-                - MSc (with Distinction), Informatics, The University of
-                Edinburgh, 2019
-                <br />
-                &emsp;Dissertation: Gender Identification from 3D Facial Surface
-                Model
-                <br />
-                &emsp;Supervisor:
-                <a href="https://homepages.inf.ed.ac.uk/rbf/"
-                  >Robert B. Fisher</a
-                >
-                <br />
-                <br />
-                - B.Eng., Telecommunication Engineering, Beijing University of
-                Posts and Telecommunications, 2018
-                <br />
-                &emsp;Dissertation: Realization of Image Super-Resolution by
-                Implementing Convolutional Neural Network on Sub-pixel
-                <br />
-                &emsp;Supervisor:
-                <a
-                  href="https://sice.bupt.edu.cn/Home/Team_Intro1___individual_page/Team_Introduction/Men_Aidong_Team.htm"
-                  >Aidong Men</a
-                >
-                <br />
-                <br />
-                - Exchange student, Högskolan i Skövde, Sept. 2016 - Jan. 2017
-              </div>
+    <body>
+        <div class="topnav">
+            <div class="container">
+                <a href="./contact.html">Contact</a>
+                <a href="#about">About Me</a>
+                <a href="../index.html#project">Project</a>
+                <a href="../index.html#publication">Publication</a>
+                <a href="../index.html#news">News</a>
+                <a href="../index.html">Home</a>
             </div>
-            <div class="row vspace-top-news">
-              <div class="col-sm-2 news-date">
-                Research Experience
-              </div>
-              <div class="col">
-                - Research Intern, National Laboratory of Pattern Recognition,
-                CASIA, Oct. 2019 - present
-                <br />
-                <br />
-                - Undergraduate Research Assistant, Next Generation Internet
-                Research Center, BUPT, May - Oct. 2017
-              </div>
-            </div>
-            <div class="vspace-top">
-              Here is my <a href="../pdfs/CV_Hao_Wang.pdf">CV</a> if you are
-              interested!
-            </div>
-          </div>
         </div>
-      </div>
-      <!-- Back to top -->
-      <!-- <div class='vspace-top'>
-            <a href="#about" style="display: block; text-align: center;">[Back to Top]</a>
-        </div> -->
-    </div>
 
-    <!-- <div id='footer' class='vspace-top'>
+        <div id="about" class="container">
+            <div class="row vspace-top">
+                <div class="col offset-sm-1">
+                    <div class="vspace-top">
+                        <h1>About Me</h1>
+                    </div>
+                    <div class="vspace-top">
+                        <div class="row vspace-top-news">
+                            <div class="col-sm-2 news-date">
+                                Education
+                            </div>
+                            <div class="col">
+                                - MSc (with Distinction), Informatics, The University of Edinburgh, 2019
+                                <br />
+                                &emsp;Dissertation: Gender Identification from 3D Facial Surface Model
+                                <br />
+                                &emsp;Supervisor:
+                                <a href="https://homepages.inf.ed.ac.uk/rbf/">Robert B. Fisher</a>
+                                <br />
+                                &emsp;<a href="docs/transcript/Transcript_MSc_UoE_Hao_Wang.pdf">Full HEAR Transcript</a>
+                                <br />
+                                <br />
+                                - B.Eng., Telecommunication Engineering, Beijing University of Posts and Telecommunications, 2018
+                                <br />
+                                &emsp;Dissertation: Realization of Image Super-Resolution by Implementing Convolutional Neural Network on Sub-pixel
+                                <br />
+                                &emsp;Supervisor:
+                                <a href="https://sice.bupt.edu.cn/Home/Team_Intro1___individual_page/Team_Introduction/Men_Aidong_Team.htm">Aidong Men</a>
+                                <br />
+                                &emsp;<a href="docs/transcript/Transcript_BE_BUPT_Hao_Wang.pdf">Full Transcript</a>
+                                <br />
+                                <br />
+                                - Exchange student, Högskolan i Skövde, Sept. 2016 - Jan. 2017
+                                <br />
+                                &emsp;<a href="docs/transcript/Certificate_Exchange_Hao_Wang.pdf">Course certificate</a>
+                            </div>
+                        </div>
+                        <div class="row vspace-top-news">
+                            <div class="col-sm-2 news-date">
+                                Research Experience
+                            </div>
+                            <div class="col">
+                                - Research Intern, National Laboratory of Pattern Recognition, CASIA, Oct. 2019 - present
+                                <br />
+                                <br />
+                                - Undergraduate Research Assistant, Next Generation Internet Research Center, BUPT, May - Oct. 2017
+                            </div>
+                        </div>
+                        <div class="vspace-top">Here is my <a href="../pdfs/CV_Hao_Wang.pdf">CV</a> if you are interested!</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Back to top -->
+            <div class="vspace-top">
+                <a href="#about" style="display: block; text-align: center;">[Back to Top]</a>
+            </div>
+        </div>
+
+        <!-- <div id='footer' class='vspace-top'>
         <center> Hao Wang &copy; 2019 </center>
     </div> -->
 
-    <div id="footer" class="vspace-top">
-      <center>
-        <script language="Javascript">
-          var dd = document.lastModified;
-          var pp = new Date(dd);
-          document.write(
-            "Last Updated: " +
-              pp.getFullYear() +
-              "-" +
-              (pp.getMonth() + 1) +
-              "-" +
-              pp.getDate()
-          );
-        </script>
-      </center>
-    </div>
+        <div id="footer" class="vspace-top">
+            <center>
+                <script language="Javascript">
+                    var dd = document.lastModified;
+                    var pp = new Date(dd);
+                    document.write("Last Updated: " + pp.getFullYear() + "-" + (pp.getMonth() + 1) + "-" + pp.getDate());
+                </script>
+            </center>
+        </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
 </html>
