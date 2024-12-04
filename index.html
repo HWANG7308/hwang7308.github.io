@@ -1,192 +1,189 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Hao Wang's Homepage</title>
+	<head>
+		<title>Hao Wang's Homepage</title>
 
-        <!-- Meta tags -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<!-- Meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-        <!-- Bootstrap CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
 
-        <!-- Page icon -->
-        <link rel="icon" href="imgs/admin/icon.ico" type="image/x-icon" />
+		<!-- Page icon -->
+		<link rel="icon" href="imgs/admin/icon.ico" type="image/x-icon" />
 
-        <!-- Icons from Fontawesome & Academicons -->
-        <script src="https://kit.fontawesome.com/0575f02792.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="./academicons/css/academicons.min.css" />
+		<!-- Icons from Fontawesome & Academicons -->
+		<script src="https://kit.fontawesome.com/0575f02792.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="./academicons/css/academicons.min.css" />
 
-        <!-- Custom Styles -->
-        <style>
-            body {
-                font-family: "sans-serif";
-                font-size: 16px;
-                background-color: #ffffff;
-                color: #4f6071;
-            }
-            #header {
-                background-color: #f4f4f4;
-                /*background-color: #FFFFFF;*/
-                display: flex;
-                align-items: flex-end;
-                padding-top: 105px;
-                padding-bottom: 60px;
-            }
-            #footer {
-                background-color: #f4f4f4;
-                padding: 10px;
-            }
-            #portrait {
-                border: 0px solid white;
-            }
-            #header-text {
-                margin-top: 60px;
-                margin-left: 220px;
-            }
-            #header-text-name {
-                font-size: 40px;
-            }
-            #header-text-status {
-                font-size: 15px;
-            }
-            #header-text-email {
-                font-size: 20px;
-                font-style: italic;
-            }
-            .header-text-desc {
-                font-size: 20px;
-            }
-            .vspace-top {
-                /* margin-top: 30px; */
-                padding-top: 60px;
-            }
-            .vspace-top-news {
-                margin-top: 20px;
-            }
-            .paper-image {
-                width: 150px;
-            }
-            .news-date {
-                font-weight: bold;
-            }
-            .paper-title {
-                font-weight: bold;
-                font-size: 20px;
-            }
-            .paper-desc {
-                font-style: italic;
-            }
+		<!-- Custom Styles -->
+		<style>
+			body {
+				font-family: "sans-serif";
+				font-size: 16px;
+				background-color: #ffffff;
+				color: #4f6071;
+			}
+			#header {
+				background-color: #f4f4f4;
+				/*background-color: #FFFFFF;*/
+				display: flex;
+				align-items: flex-end;
+				padding-top: 105px;
+				padding-bottom: 60px;
+			}
+			#footer {
+				background-color: #f4f4f4;
+				padding: 10px;
+			}
+			#portrait {
+				border: 0px solid white;
+			}
+			#header-text {
+				margin-top: 60px;
+				margin-left: 220px;
+			}
+			#header-text-name {
+				font-size: 40px;
+			}
+			#header-text-status {
+				font-size: 15px;
+			}
+			#header-text-email {
+				font-size: 20px;
+				font-style: italic;
+			}
+			.header-text-desc {
+				font-size: 20px;
+			}
+			.vspace-top {
+				/* margin-top: 30px; */
+				padding-top: 60px;
+			}
+			.vspace-top-news {
+				margin-top: 20px;
+			}
+			.paper-image {
+				width: 150px;
+			}
+			.news-date {
+				font-weight: bold;
+			}
+			.paper-title {
+				font-weight: bold;
+				font-size: 20px;
+			}
+			.paper-desc {
+				font-style: italic;
+			}
 
-            /* Add a black background color to the top navigation */
-            .topnav {
-                background-color: #002133;
-                overflow: hidden;
-                position: fixed;
-                width: 100%;
-                z-index: 999;
-            }
+			/* Add a black background color to the top navigation */
+			.topnav {
+				background-color: #002133;
+				overflow: hidden;
+				position: fixed;
+				width: 100%;
+				z-index: 999;
+			}
 
-            /* Style the links inside the navigation bar */
-            .topnav a {
-                float: right;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                font-size: 17px;
-            }
+			/* Style the links inside the navigation bar */
+			.topnav a {
+				float: right;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				font-size: 17px;
+			}
 
-            /* Change the color of links on hover */
-            .topnav a:hover {
-                background-color: #ddd;
-                color: black;
-            }
+			/* Change the color of links on hover */
+			.topnav a:hover {
+				background-color: #ddd;
+				color: black;
+			}
 
-            /* Add a color to the active/current link */
-            .topnav a.active {
-                background-color: #ddd;
-                color: black;
-            }
-        </style>
-    </head>
+			/* Add a color to the active/current link */
+			.topnav a.active {
+				background-color: #ddd;
+				color: black;
+			}
+		</style>
+	</head>
 
-    <body>
-        <div class="topnav">
-            <div class="container">
-                <a href="#contact">Contact</a>
-                <a href="#experience">Experience</a>
-                <a href="#project">Project</a>
-                <a href="#publication">Publication</a>
-                <a href="#education">Education</a>
-                <!-- <a href="#news">News</a> -->
-                <a href="index.html">Home</a>
-            </div>
-        </div>
+	<body>
+		<div class="topnav">
+			<div class="container">
+				<a href="#contact">Contact</a>
+				<a href="#experience">Experience</a>
+				<a href="#project">Project</a>
+				<a href="#publication">Publication</a>
+				<a href="#education">Education</a>
+				<!-- <a href="#news">News</a> -->
+				<a href="index.html">Home</a>
+			</div>
+		</div>
 
-        <div id="header">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3 offset-sm-1">
-                        <img src="imgs/admin/portrait.jpeg" class="img-fluid" id="portrait" />
-                    </div>
-                    <div class="col">
-                        <div id="header-text-name">Hao Wang (王灏)</div>
-                        <div id="header-text-status">
-                            <a href="https://www.chalmers.se/en/persons/haowang/">Ph.D. student</a> <br />
-                            <a href="https://www.chalmers.se/en/departments/ims/research/production-systems/">Division of Production Systems</a>,
-                            <a href="https://www.chalmers.se/en/departments/ims/">Department of Industrial and Materials Science</a>
-                            <br />
-                            <a href="https://www.chalmers.se/en/">Chalmers University of Technology</a>
-                            <br />
-                        </div>
-                        <div id="header-text-email"><a href="malto: haowang@chalmers.se">haowang (at) chalmers (dot) se</a></div>
-                        <div>
-                            <br />
-                            <a href="https://scholar.google.com/citations?user=hKFj_QwAAAAJ">Google Scholar</a> |
-                            <!-- <a href="https://dblp.uni-trier.de/pid/181/2812-74.html">DBLP</a> | -->
-                            <!-- <a href="https://www.semanticscholar.org/author/Hao-Wang/1806035689">Semantic Scholar</a> | -->
-                            <a href="https://orcid.org/0000-0003-3847-524X">ORCID</a> |
-                            <a href="https://github.com/HWANG7308">Github</a> |
-                            <a href="https://www.linkedin.com/in/haowang-chalmers">LinkedIn</a> |
-                            <a href="./docs/CV/CV_Hao_Wang.pdf">CV</a>
-                            <!-- &emsp;<a href="https://scholar.google.com/citations?user=hKFj_QwAAAAJ"><i class="ai ai-google-scholar" style="font-size: 24px; color: #4F6071;"></i></a> -->
-                            <!-- &emsp;<a href="https://orcid.org/0000-0003-3847-524X"><i class="fab fa-orcid" style="font-size: 24px; color: #4f6071"></i></a> -->
-                            <!-- &emsp;<a href="https://github.com/HWANG7308"><i class="fab fa-github" style="font-size: 24px; color: #4f6071"></i></a> -->
-                            <!-- &emsp;<a href="https://www.linkedin.com/in/%E7%81%8F-%E7%8E%8B-31a876a2/?locale=en_US"><i class="fab fa-linkedin-in" style="font-size: 24px; color: #4f6071"></i></a> -->
-                            <!-- &emsp;<a href="https://twitter.com/HW7308"><i class="fab fa-twitter" style="font-size: 24px; color: #4F6071;"></i></a> -->
-                            <!-- &emsp;<a href="./docs/CV/CV_Hao_Wang.pdf"><i class="ai ai-cv" style="font-size: 24px; color: #4f6071"></i></a> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<div id="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-3 offset-sm-1">
+						<img src="imgs/admin/portrait.jpeg" class="img-fluid" id="portrait" />
+					</div>
+					<div class="col">
+						<div id="header-text-name">Hao Wang (王灏)</div>
+						<div id="header-text-status">
+							<a href="https://www.chalmers.se/en/persons/haowang/">Ph.D. student</a> <br />
+							<a href="https://www.chalmers.se/en/departments/ims/research/production-systems/">Division of Production Systems</a>,
+							<a href="https://www.chalmers.se/en/departments/ims/">Department of Industrial and Materials Science</a>
+							<br />
+							<a href="https://www.chalmers.se/en/">Chalmers University of Technology</a>
+							<br />
+						</div>
+						<div id="header-text-email"><a href="malto: haowang@chalmers.se">haowang (at) chalmers (dot) se</a></div>
+						<div>
+							<br />
+							<a href="https://scholar.google.com/citations?user=hKFj_QwAAAAJ">Google Scholar</a> |
+							<!-- <a href="https://dblp.uni-trier.de/pid/181/2812-74.html">DBLP</a> | -->
+							<!-- <a href="https://www.semanticscholar.org/author/Hao-Wang/1806035689">Semantic Scholar</a> | -->
+							<a href="https://orcid.org/0000-0003-3847-524X">ORCID</a> | <a href="https://github.com/HWANG7308">Github</a> | <a href="https://www.linkedin.com/in/haowang-chalmers">LinkedIn</a> |
+							<a href="./docs/CV/CV_Hao_Wang.pdf">CV</a>
+							<!-- &emsp;<a href="https://scholar.google.com/citations?user=hKFj_QwAAAAJ"><i class="ai ai-google-scholar" style="font-size: 24px; color: #4F6071;"></i></a> -->
+							<!-- &emsp;<a href="https://orcid.org/0000-0003-3847-524X"><i class="fab fa-orcid" style="font-size: 24px; color: #4f6071"></i></a> -->
+							<!-- &emsp;<a href="https://github.com/HWANG7308"><i class="fab fa-github" style="font-size: 24px; color: #4f6071"></i></a> -->
+							<!-- &emsp;<a href="https://www.linkedin.com/in/%E7%81%8F-%E7%8E%8B-31a876a2/?locale=en_US"><i class="fab fa-linkedin-in" style="font-size: 24px; color: #4f6071"></i></a> -->
+							<!-- &emsp;<a href="https://twitter.com/HW7308"><i class="fab fa-twitter" style="font-size: 24px; color: #4F6071;"></i></a> -->
+							<!-- &emsp;<a href="./docs/CV/CV_Hao_Wang.pdf"><i class="ai ai-cv" style="font-size: 24px; color: #4f6071"></i></a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-        <div class="container">
-            <div class="row vspace-top">
-                <div class="col offset-sm-1">
-                    <h1>Bio</h1>
-                    <div>
-                        <p>
-                            Hi! I am Hao Wang, currently a Ph.D. student at the Division of Production Systems, Department of Industrial and Materials Science, Chalmers University of Technology.
-                            My research interests are in object detection and pose estimation, and their application in robotics and manufacturing.
-                            <!-- <br />
+		<div class="container">
+			<div class="row vspace-top">
+				<div class="col offset-sm-1">
+					<h1>Bio</h1>
+					<div>
+						<p>
+							Hi! I am Hao Wang, currently a Ph.D. student at the Division of Production Systems, Department of Industrial and Materials Science, Chalmers University of Technology. My research interests are in object detection and pose estimation, and their application in robotics and
+							manufacturing.
+							<!-- <br />
                             <br /> -->
-                            I have background in signal and image processing, embedded system, machine learning, computer vision, and natural language processing.
-                            In 2019, I received my MSc with Distinction in Informatics from The University of Edinburgh.
-                            <!-- <a href="https://www.ed.ac.uk/files/atoms/files/pgb-informatics-2018.pdf#page=5">Informatics</a> from <a href="https://www.ed.ac.uk/">The University of Edinburgh</a>. -->
-                            In 2018, I received my B.Eng. in Telecommunication Engineering from Beijing University of Posts and Telecommunications.
-                            <!-- <br />
+							I have background in signal and image processing, embedded system, machine learning, computer vision, and natural language processing. In 2019, I received my MSc with Distinction in Informatics from The University of Edinburgh.
+							<!-- <a href="https://www.ed.ac.uk/files/atoms/files/pgb-informatics-2018.pdf#page=5">Informatics</a> from <a href="https://www.ed.ac.uk/">The University of Edinburgh</a>. -->
+							In 2018, I received my B.Eng. in Telecommunication Engineering from Beijing University of Posts and Telecommunications.
+							<!-- <br />
                             <br />
                             I am also an aspiring musician and <a href="https://www.instagram.com/_1wanghao1_/">photographer</a>. -->
-                            <!-- <br />
+							<!-- <br />
                             <br />
                             You can view my CV <a href="./docs/CV/CV_Hao_Wang.pdf">here</a>. -->
-                        </p>
-                    </div>
+						</p>
+					</div>
 
-                    <!-- List of news -->
-                    <!-- <div id="news" class="vspace-top">
+					<!-- List of news -->
+					<!-- <div id="news" class="vspace-top">
                         <h1>News</h1>
                         <div style="overflow: auto; height: 180px;">
                             <div class="row vspace-top-news">
@@ -239,29 +236,28 @@
                         </div>
                     </div> -->
 
-                    <!-- List of education -->
-                    <div id="education" class="vspace-top">
+					<!-- List of education -->
+					<div id="education" class="vspace-top">
+						<h1>Education</h1>
 
-                        <h1>Education</h1>
-
-                        <div class="row vspace-top-news">
-                            <!-- <div class="col-sm-2 news-date">&emsp;&emsp;&emsp;<img src="../imgs/chalmers_logo.png" width="50%" class="img-fluid" /></div> -->
-                            <div class="col">
-                                <b>Ph.D. student in Product and Production Development</b>, Chalmers University of Technology, 2021 - Present
-                                <!-- <br />
+						<div class="row vspace-top-news">
+							<!-- <div class="col-sm-2 news-date">&emsp;&emsp;&emsp;<img src="../imgs/chalmers_logo.png" width="50%" class="img-fluid" /></div> -->
+							<div class="col">
+								<b>Ph.D. student in Product and Production Development</b>, Chalmers University of Technology, 2021 - Present
+								<!-- <br />
                                 Chalmers University of Technology
                                 <br />
                                 Supervisor:
                                 <a href="https://www.chalmers.se/en/persons/job/">Bj\"orn Johansson</a>,
                                 <a href="https://www.chalmers.se/en/persons/skoand/">Anders Skoogh</a> -->
-                            </div>
-                        </div>
+							</div>
+						</div>
 
-                        <div class="row vspace-top-news">
-                            <!-- <div class="col-sm-2 news-date">&emsp;&emsp;&emsp;<img src="../imgs/uoe_logo.png" width="50%" class="img-fluid" /></div> -->
-                            <div class="col">
-                                <b>M.Sc. in Informatics</b>, The University of Edinburgh, 2018 - 2019
-                                <!-- <br />
+						<div class="row vspace-top-news">
+							<!-- <div class="col-sm-2 news-date">&emsp;&emsp;&emsp;<img src="../imgs/uoe_logo.png" width="50%" class="img-fluid" /></div> -->
+							<div class="col">
+								<b>M.Sc. in Informatics</b>, The University of Edinburgh, 2018 - 2019
+								<!-- <br />
                                 The University of Edinburgh
                                 <br />
                                 Dissertation: Gender Identification from 3D Facial Surface Model
@@ -272,10 +268,10 @@
                                 <a href="https://homepages.inf.ed.ac.uk/rbf/">Robert B. Fisher</a>
                                 <br />
                                 <a href="../docs/transcript/Transcript_MSc_UoE_Hao_Wang.pdf">Full HEAR Transcript</a> -->
-                            </div>
-                        </div>
+							</div>
+						</div>
 
-                        <!-- <div class="row vspace-top-news">
+						<!-- <div class="row vspace-top-news">
                             <div class="col-sm-2 news-date">&emsp;&emsp;&emsp;<img src="../imgs/his_logo.png" width="50%" class="img-fluid" /></div>
                             <div class="col">
                                 <b>Exchange student</b>, Sept. 2016 - Jan. 2017
@@ -286,11 +282,11 @@
                             </div>
                         </div> -->
 
-                        <div class="row vspace-top-news">
-                            <!-- <div class="col-sm-2 news-date">&emsp;&emsp;&emsp;<img src="../imgs/bupt_logo.png" width="50%" class="img-fluid" /></div> -->
-                            <div class="col">
-                                <b>B.Eng. in Telecommunication Engineering</b>, Beijing University of Posts and Telecommunications, 2014 - 2018
-                                <!-- <br />
+						<div class="row vspace-top-news">
+							<!-- <div class="col-sm-2 news-date">&emsp;&emsp;&emsp;<img src="../imgs/bupt_logo.png" width="50%" class="img-fluid" /></div> -->
+							<div class="col">
+								<b>B.Eng. in Telecommunication Engineering</b>, Beijing University of Posts and Telecommunications, 2014 - 2018
+								<!-- <br />
                                 Beijing University of Posts and Telecommunications
                                 <br />
                                 Dissertation: Realization of Image Super-Resolution by Implementing Convolutional Neural Network on Sub-pixel <a href="../docs/dissertation/beng/[2018][B.Eng.]将卷积神经网络应用于子像素的图像超分辨率实现.pdf">[Paper]</a>
@@ -299,352 +295,390 @@
                                 <a href="https://sice.bupt.edu.cn/Home/Team_Intro1___individual_page/Team_Introduction/Men_Aidong_Team.htm">Aidong Men</a>
                                 <br />
                                 <a href="../docs/transcript/Transcript_BE_BUPT_Hao_Wang.pdf">Full Transcript</a> -->
-                            </div>
-                        </div>
-                    </div>
+							</div>
+						</div>
+					</div>
 
-                    <!-- List of publications -->
-                    <div id="publication" class="vspace-top">
-                        <h1>Publication</h1>
-                        <a href="https://scholar.google.com/citations?user=hKFj_QwAAAAJ">Google Scholar</a>
-                        <!-- <a href="https://dblp.uni-trier.de/pid/181/2812-74.html">DBLP</a> |
+					<!-- List of publications -->
+					<div id="publication" class="vspace-top">
+						<h1>Publication</h1>
+						<a href="https://scholar.google.com/citations?user=hKFj_QwAAAAJ">Google Scholar</a>
+						<!-- <a href="https://dblp.uni-trier.de/pid/181/2812-74.html">DBLP</a> |
                         <a href="https://www.semanticscholar.org/author/Hao-Wang/1806035689">Semantic Scholar</a> -->
-                        
-                        <div class="row vspace-top-news">
-                            <div class="col">
-                                <div class="paper-title">--- Journal ---</div>
-                            </div>
-                        </div>
 
-                        <div class="row vspace-top-news">
-                            <div class="col">
-                                <div class="paper-title">Challenges and Opportunities to Advance Manufacturing Research for Sustainable Battery Life Cycles</div>
-                                <div class="paper-desc">Frontiers in Manufacturing Technology (2024)</div>
-                                <div class="paper-authors">Björn Johansson, Mélanie Despeisse, Jon Bokrantz, Greta Braun, Huizhong Cao, Arpita Chari, Qi Fang, Clarissa A González Chávez, Anders Skoogh, Henrik Söderlund, <b><u>Hao Wang</u></b>, Kristina Wärmefjord, Lars Nyborg, Jinhua Sun, Roland Örtengren, Kelsea A. Schumacher, Laura Espinal, K. C. Morris, Jason Nunley Jr., Yusuke Kishita, Yasushi Umeda, Federica Acerbi, Marta Pinzone, Hanna Persson, Sophie Charpentier, Kristina Edström, Daniel Brandell, Maheshwaran Gopalakrishnan, Hossein Rahnama, Lena Abrahamsson, Anna Öhrwall Rönnbäck, Johan Stahre</div>
-                                <div>
-                                    <a href="https://doi.org/10.3389/fmtec.2024.1360076">Paper</a>
-                                </div>
-                            </div>
-                        </div>
+						<div class="row vspace-top-news">
+							<div class="col">
+								<div class="paper-title">--- Journal ---</div>
+							</div>
+						</div>
 
-                        <div class="row vspace-top-news">
-                            <div class="col">
-                                <div class="paper-title">A Systematic Literature Review of Computer Vision Applications in Robotized Wire Harness Assembly</div>
-                                <div class="paper-desc">Advanced Engineering Informatics (2024)</div>
-                                <div class="paper-authors"><b><u>Hao Wang</u></b>, Omkar Salunkhe, Walter Quadrini, Dan Lämkull, Fredrik Ore, Mélanie Despeisse, Luca Fumagalli, Johan Stahre, Björn Johansson</div>
-                                <div>
-                                    <a href="https://doi.org/10.1016/j.aei.2024.102596">Paper</a>
-                                </div>
-                            </div>
-                        </div>
+						<div class="row vspace-top-news">
+							<div class="col">
+								<div class="paper-title">Challenges and Opportunities to Advance Manufacturing Research for Sustainable Battery Life Cycles</div>
+								<div class="paper-desc">Frontiers in Manufacturing Technology (2024)</div>
+								<div class="paper-authors">
+									Björn Johansson, Mélanie Despeisse, Jon Bokrantz, Greta Braun, Huizhong Cao, Arpita Chari, Qi Fang, Clarissa A González Chávez, Anders Skoogh, Henrik Söderlund, <b><u>Hao Wang</u></b
+									>, Kristina Wärmefjord, Lars Nyborg, Jinhua Sun, Roland Örtengren, Kelsea A. Schumacher, Laura Espinal, K. C. Morris, Jason Nunley Jr., Yusuke Kishita, Yasushi Umeda, Federica Acerbi, Marta Pinzone, Hanna Persson, Sophie Charpentier, Kristina Edström, Daniel
+									Brandell, Maheshwaran Gopalakrishnan, Hossein Rahnama, Lena Abrahamsson, Anna Öhrwall Rönnbäck, Johan Stahre
+								</div>
+								<div>
+									<a href="https://doi.org/10.3389/fmtec.2024.1360076">Paper</a>
+								</div>
+							</div>
+						</div>
 
-                        <div class="row vspace-top-news">
-                            <div class="col">
-                                <div class="paper-title">Beyond 3DMM: Learning to Capture High-fidelity 3D Face Shape</div>
-                                <div class="paper-desc">IEEE Transactions on Pattern Analysis and Machine Intelligence (2022)</div>
-                                <div class="paper-authors">Xiangyu Zhu, Chang Yu, Di Huang, Zhen Lei, <b><u>Hao Wang</u></b>, Stan Z. Li</div>
-                                <div>
-                                    <a href="https://doi.org/10.1109/TPAMI.2022.3164131">Paper</a>
-                                </div>
-                            </div>
-                        </div>
+						<div class="row vspace-top-news">
+							<div class="col">
+								<div class="paper-title">A Systematic Literature Review of Computer Vision Applications in Robotized Wire Harness Assembly</div>
+								<div class="paper-desc">Advanced Engineering Informatics (2024)</div>
+								<div class="paper-authors">
+									<b><u>Hao Wang</u></b
+									>, Omkar Salunkhe, Walter Quadrini, Dan Lämkull, Fredrik Ore, Mélanie Despeisse, Luca Fumagalli, Johan Stahre, Björn Johansson
+								</div>
+								<div>
+									<a href="https://doi.org/10.1016/j.aei.2024.102596">Paper</a>
+								</div>
+							</div>
+						</div>
 
-                        <div class="row vspace-top-news">
-                            <div class="col">
-                                <div class="paper-title">--- Conference ---</div>
-                            </div>
-                        </div>
+						<div class="row vspace-top-news">
+							<div class="col">
+								<div class="paper-title">Beyond 3DMM: Learning to Capture High-fidelity 3D Face Shape</div>
+								<div class="paper-desc">IEEE Transactions on Pattern Analysis and Machine Intelligence (2022)</div>
+								<div class="paper-authors">
+									Xiangyu Zhu, Chang Yu, Di Huang, Zhen Lei, <b><u>Hao Wang</u></b
+									>, Stan Z. Li
+								</div>
+								<div>
+									<a href="https://doi.org/10.1109/TPAMI.2022.3164131">Paper</a>
+								</div>
+							</div>
+						</div>
 
-                        <div class="row vspace-top-news">
-                            <div class="col">
-                                <div class="paper-title">Overview of Computer Vision Techniques in Robotized Wire Harness Assembly: Current State and Future Opportunities</div>
-                                <div class="paper-desc">2023 CIRP International Conference on Manufacturing Systems (CIRP CMS)</div>
-                                <div class="paper-authors"><b><u>Hao Wang</u></b>, Omkar Salunkhe, Walter Quadrini, Dan Lämkull, Fredrik Ore, Björn Johansson, Johan Stahre</div>
-                                <div>
-                                    <a href="https://doi.org/10.1016/j.procir.2023.09.127">Paper</a> |
-                                    <a href="docs/publication/presentation/2023_CIRP_CMS.pdf">Slides</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="row vspace-top-news">
-                            <div class="col">
-                                <div class="paper-title">Review of Current Status and Future Directions for Collaborative and Semi-Automated Automotive Wire Harnesses Assembly</div>
-                                <div class="paper-desc">2023 CIRP International Conference on Manufacturing Systems (CIRP CMS)</div>
-                                <div class="paper-authors">Omkar Salunkhe, Walter Quadrini, <b><u>Hao Wang</u></b>, Johan Stahre, David Romero, Luca Fumagalli, Dan Lämkull</div>
-                                <div>
-                                    <a href="https://doi.org/10.1016/j.procir.2023.09.061">Paper</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="row vspace-top-news">
-                            <div class="col">
-                                <div class="paper-title">Battery Production Systems: State of the Art and Future Developments</div>
-                                <div class="paper-desc">2023 IFIP International Conference on Advances in Production Management Systems (APMS)</div>
-                                <div class="paper-authors">Mélanie Despeisse, Björn Johansson, Jon Bokrantz, Greta Braun, Arpita Chari, Xiaoxia Chen, Qi Fang, Clarissa A. González Chávez, Anders Skoogh, Johan Stahre, Ninan Theradapuzha Mathew, Ebru Turanoglu Bekar, <b><u>Hao Wang</u></b>, Roland Örtengren</div>
-                                <div>
-                                    <a href="https://doi.org/10.1007/978-3-031-43688-8_36">Paper</a> |
-                                    <a href="docs/publication/presentation/2023_IFIP_APMS.pdf">Slides</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="row vspace-top-news">
-                            <div class="col">
-                                <div class="paper-title">Deep Learning-Based Connector Detection for Robotized Assembly of Automotive Wire Harnesses</div>
-                                <div class="paper-desc">2023 IEEE International Conference on Automation Science and Engineering (CASE)</div>
-                                <div class="paper-authors"><b><u>Hao Wang</u></b>, Björn Johansson</div>
-                                <div>
-                                    <a href="https://doi.org/10.1109/CASE56687.2023.10260619">Paper</a> |
-                                    <!-- <a href="https://arxiv.org/abs/2309.13746">Preprint</a> | -->
-                                    <a href="docs/publication/presentation/2023_IEEE_CASE.pdf">Slides</a> |
-                                    <a href="docs/publication/presentation/2023_IEEE_CASE.mp4">Video</a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="row vspace-top-news">
-                            <div class="col">
-                                <div class="paper-title">Face Forgery Detection by 3D Decomposition</div>
-                                <div class="paper-desc">2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) (Oral)</div>
-                                <div class="paper-authors">Xiangyu Zhu*, <b><u>Hao Wang*</u></b>, Hongyan Fei, Zhen Lei, Stan Z. Li (*Equal contribution)</div>
-                                <div>
-                                    <a href="https://doi.org/10.1109/CVPR46437.2021.00295">Paper</a>
-                                    <!-- <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Zhu_Face_Forgery_Detection_by_3D_Decomposition_CVPR_2021_paper.pdf">Paper</a> |
+						<div class="row vspace-top-news">
+							<div class="col">
+								<div class="paper-title">--- Conference ---</div>
+							</div>
+						</div>
+
+						<div class="row vspace-top-news">
+							<div class="col">
+								<div class="paper-title">Overview of Computer Vision Techniques in Robotized Wire Harness Assembly: Current State and Future Opportunities</div>
+								<div class="paper-desc">2023 CIRP International Conference on Manufacturing Systems (CIRP CMS)</div>
+								<div class="paper-authors">
+									<b><u>Hao Wang</u></b
+									>, Omkar Salunkhe, Walter Quadrini, Dan Lämkull, Fredrik Ore, Björn Johansson, Johan Stahre
+								</div>
+								<div>
+									<a href="https://doi.org/10.1016/j.procir.2023.09.127">Paper</a> |
+									<a href="docs/publication/presentation/2023_CIRP_CMS.pdf">Slides</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="row vspace-top-news">
+							<div class="col">
+								<div class="paper-title">Review of Current Status and Future Directions for Collaborative and Semi-Automated Automotive Wire Harnesses Assembly</div>
+								<div class="paper-desc">2023 CIRP International Conference on Manufacturing Systems (CIRP CMS)</div>
+								<div class="paper-authors">
+									Omkar Salunkhe, Walter Quadrini, <b><u>Hao Wang</u></b
+									>, Johan Stahre, David Romero, Luca Fumagalli, Dan Lämkull
+								</div>
+								<div>
+									<a href="https://doi.org/10.1016/j.procir.2023.09.061">Paper</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="row vspace-top-news">
+							<div class="col">
+								<div class="paper-title">Battery Production Systems: State of the Art and Future Developments</div>
+								<div class="paper-desc">2023 IFIP International Conference on Advances in Production Management Systems (APMS)</div>
+								<div class="paper-authors">
+									Mélanie Despeisse, Björn Johansson, Jon Bokrantz, Greta Braun, Arpita Chari, Xiaoxia Chen, Qi Fang, Clarissa A. González Chávez, Anders Skoogh, Johan Stahre, Ninan Theradapuzha Mathew, Ebru Turanoglu Bekar, <b><u>Hao Wang</u></b
+									>, Roland Örtengren
+								</div>
+								<div>
+									<a href="https://doi.org/10.1007/978-3-031-43688-8_36">Paper</a> |
+									<a href="docs/publication/presentation/2023_IFIP_APMS.pdf">Slides</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="row vspace-top-news">
+							<div class="col">
+								<div class="paper-title">Deep Learning-Based Connector Detection for Robotized Assembly of Automotive Wire Harnesses</div>
+								<div class="paper-desc">2023 IEEE International Conference on Automation Science and Engineering (CASE)</div>
+								<div class="paper-authors">
+									<b><u>Hao Wang</u></b
+									>, Björn Johansson
+								</div>
+								<div>
+									<a href="https://doi.org/10.1109/CASE56687.2023.10260619">Paper</a> |
+									<!-- <a href="https://arxiv.org/abs/2309.13746">Preprint</a> | -->
+									<a href="docs/publication/presentation/2023_IEEE_CASE.pdf">Slides</a> |
+									<a href="docs/publication/presentation/2023_IEEE_CASE.mp4">Video</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="row vspace-top-news">
+							<div class="col">
+								<div class="paper-title">Face Forgery Detection by 3D Decomposition</div>
+								<div class="paper-desc">2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) (Oral)</div>
+								<div class="paper-authors">
+									Xiangyu Zhu*, <b><u>Hao Wang*</u></b
+									>, Hongyan Fei, Zhen Lei, Stan Z. Li (*Equal contribution)
+								</div>
+								<div>
+									<a href="https://doi.org/10.1109/CVPR46437.2021.00295">Paper</a>
+									<!-- <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Zhu_Face_Forgery_Detection_by_3D_Decomposition_CVPR_2021_paper.pdf">Paper</a> |
                                     <a href="https://openaccess.thecvf.com/content/CVPR2021/supplemental/Zhu_Face_Forgery_Detection_CVPR_2021_supplemental.pdf">Supplementary Material</a> -->
-                                </div>
-                                <!-- <ol type="i">
+								</div>
+								<!-- <ol type="i">
                                     <li>Introduced 3D decomposition into forgery detection;</li>
                                     <li>Constructed facial detail to amplify subtle artifacts;</li>
                                     <li>Proposed a two-stream FD<sup>2</sup>Net to fuse the clues from original images and facial details;</li>
                                     <li>Introduced a supervised attention module to highlight the discriminative region</li>
                                 </ol> -->
-                            </div>
-                        </div>
-                        
-                        <div class="row vspace-top-news">
-                            <!-- <div class="col-sm-3">
+							</div>
+						</div>
+
+						<div class="row vspace-top-news">
+							<!-- <div class="col-sm-3">
                                 <img src="imgs/beyond3dmm.png" class="img-fluid" />
                             </div> -->
-                            <div class="col">
-                                <div class="paper-title">Beyond 3DMM Space: Towards Fine-grained 3D Face Reconstruction</div>
-                                <div class="paper-desc">2020 European Conference on Computer Vision (ECCV)</div>
-                                <div class="paper-authors">Xiangyu Zhu, Fan Yang, Di Huang, Chang Yu, <b><u>Hao Wang</u></b>, Jianzhu Guo, Zhen Lei, Stan Z. Li</div>
-                                <div>
-                                    <a href="https://doi.org/10.1007/978-3-030-58598-3_21">Paper</a> |
-                                    <!-- <a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123530341.pdf">Paper</a> | -->
-                                    <!-- <a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123530341-supp.pdf">Supplementary Material</a> | -->
-                                    <a href="https://github.com/XiangyuZhu-open/Beyond3DMM">Code</a>
-                                </div>
-                                <!-- <ol type="i">
+							<div class="col">
+								<div class="paper-title">Beyond 3DMM Space: Towards Fine-grained 3D Face Reconstruction</div>
+								<div class="paper-desc">2020 European Conference on Computer Vision (ECCV)</div>
+								<div class="paper-authors">
+									Xiangyu Zhu, Fan Yang, Di Huang, Chang Yu, <b><u>Hao Wang</u></b
+									>, Jianzhu Guo, Zhen Lei, Stan Z. Li
+								</div>
+								<div>
+									<a href="https://doi.org/10.1007/978-3-030-58598-3_21">Paper</a> |
+									<!-- <a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123530341.pdf">Paper</a> | -->
+									<!-- <a href="http://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123530341-supp.pdf">Supplementary Material</a> | -->
+									<a href="https://github.com/XiangyuZhu-open/Beyond3DMM">Code</a>
+								</div>
+								<!-- <ol type="i">
                                     <li>Proposed a novel solution to construct large-scale fine-grained 3D data from RGB-D images;</li>
                                     <li>Constructed a new dataset, Fine-Grained 3D face (FG3D), with 200k samples for training;</li>
                                     <li>Proposed a Fine-Grained reconstruction Network (FGNet) concentrating on shape modification by warping the network input and output to the UV space</li>
                                 </ol>-->
-                            </div>
-                        </div>
-                    </div>
+							</div>
+						</div>
+					</div>
 
-                    <div class="row vspace-top-news">
-                        <div class="col">
-                            <div class="paper-title">--- Report ---</div>
-                        </div>
-                    </div>
+					<div class="row vspace-top-news">
+						<div class="col">
+							<div class="paper-title">--- Report ---</div>
+						</div>
+					</div>
 
-                    <div class="row vspace-top-news">
-                        <div class="col">
-                            <div class="paper-title">2024 World Manufacturing Report - New Perspectives for the Future of Manufacturing: Outlook 2030</div>
-                            <div class="paper-desc">World Manufacturing Foundation (2024)</div>
-                            <div class="paper-authors"></div>
-                            <div>
-                                <a href="https://worldmanufacturing.org/wp-content/uploads/14/6-WM-REPORT_2024_LD_E-Book_b_Final.pdf">Report</a> |
-                                <a href="https://worldmanufacturing.org/report/report-2024-new-perspectives-for-the-future-of-manufacturing-outlook-2030/">Webpage</a>
-                            </div>
-                        </div>
-                    </div>
+					<div class="row vspace-top-news">
+						<div class="col">
+							<div class="paper-title">2024 World Manufacturing Report - New Perspectives for the Future of Manufacturing: Outlook 2030</div>
+							<div class="paper-desc">World Manufacturing Foundation (2024)</div>
+							<div class="paper-authors"></div>
+							<div>
+								<a href="https://worldmanufacturing.org/wp-content/uploads/14/6-WM-REPORT_2024_LD_E-Book_b_Final.pdf">Report</a> |
+								<a href="https://worldmanufacturing.org/report/report-2024-new-perspectives-for-the-future-of-manufacturing-outlook-2030/">Webpage</a>
+							</div>
+						</div>
+					</div>
 
-                    <div class="row vspace-top-news">
-                        <div class="col">
-                            <div class="paper-title">2023 World Manufacturing Report - New Business Models for the Manufacturing of the Future</div>
-                            <div class="paper-desc">World Manufacturing Foundation (2023)</div>
-                            <div class="paper-authors"></div>
-                            <div>
-                                <a href="https://worldmanufacturing.org/wp-content/uploads/28/6-WMF-Report-2023_E-Book_b_ok-1.pdf">Report</a> |
-                                <a href="https://worldmanufacturing.org/report/report-2023-new-business-models-for-the-manufacturing-of-the-future/">Webpage</a>
-                            </div>
-                        </div>
-                    </div>
+					<div class="row vspace-top-news">
+						<div class="col">
+							<div class="paper-title">2023 World Manufacturing Report - New Business Models for the Manufacturing of the Future</div>
+							<div class="paper-desc">World Manufacturing Foundation (2023)</div>
+							<div class="paper-authors"></div>
+							<div>
+								<a href="https://worldmanufacturing.org/wp-content/uploads/28/6-WMF-Report-2023_E-Book_b_ok-1.pdf">Report</a> |
+								<a href="https://worldmanufacturing.org/report/report-2023-new-business-models-for-the-manufacturing-of-the-future/">Webpage</a>
+							</div>
+						</div>
+					</div>
 
-                    <div class="row vspace-top-news">
-                        <div class="col">
-                            <div class="paper-title">--- Thesis ---</div>
-                        </div>
-                    </div>
-                    
-                    <div class="row vspace-top-news">
-                        <div class="col">
-                            <div class="paper-title">Toward Enabling Robotic Visual Perception for Assembly Tasks</div>
-                            <div class="paper-desc">Licentiate thesis, 2024</div>
-                            <div class="paper-authors"></div>
-                            <div>
-                                <a href="https://research.chalmers.se/en/publication/540720">Thesis</a> |
-                                <a href="docs/theses/2024_Lic_slides.pdf">Slides</a>
-                            </div>
-                        </div>
-                    </div>
+					<div class="row vspace-top-news">
+						<div class="col">
+							<div class="paper-title">--- Thesis ---</div>
+						</div>
+					</div>
 
-                    <div class="row vspace-top-news">
-                        <div class="col">
-                            <div class="paper-title">Gender Identification from 3D Facial Surface Model</div>
-                            <div class="paper-desc">Master thesis, 2019</div>
-                            <div class="paper-authors"></div>
-                            <div>
-                                <!-- <a href="subpage/abstract_msc.html">Abstract</a> | -->
-                                <a href="docs/theses/2019_MSc_thesis.pdf">Thesis</a>
-                            </div>
-                        </div>
-                    </div>
+					<div class="row vspace-top-news">
+						<div class="col">
+							<div class="paper-title">Toward Enabling Robotic Visual Perception for Assembly Tasks</div>
+							<div class="paper-desc">Licentiate thesis, 2024</div>
+							<div class="paper-authors"></div>
+							<div>
+								<a href="https://research.chalmers.se/en/publication/540720">Thesis</a> |
+								<a href="docs/theses/2024_Lic_slides.pdf">Slides</a>
+							</div>
+						</div>
+					</div>
 
-                    <div class="row vspace-top-news">
-                        <div class="col">
-                            <div class="paper-title">Realization of Image Super-Resolution by Implementing Convolutional Neural Network on Sub-pixel</div>
-                            <div class="paper-desc">Bachelor thesis, 2018</div>
-                            <div class="paper-authors"></div>
-                            <div>
-                                <!-- <a href="subpage/abstract_beng.html">Abstract</a> | -->
-                                <a href="docs/theses/2018_BEng_thesis.pdf">Thesis</a>
-                            </div>
-                        </div>
-                    </div>
+					<div class="row vspace-top-news">
+						<div class="col">
+							<div class="paper-title">Gender Identification from 3D Facial Surface Model</div>
+							<div class="paper-desc">Master thesis, 2019</div>
+							<div class="paper-authors"></div>
+							<div>
+								<!-- <a href="subpage/abstract_msc.html">Abstract</a> | -->
+								<a href="docs/theses/2019_MSc_thesis.pdf">Thesis</a>
+							</div>
+						</div>
+					</div>
 
-                    <!-- List of research projects -->
-                    <div id="project" class="vspace-top">
-                        <h1>Research Projects</h1>
+					<div class="row vspace-top-news">
+						<div class="col">
+							<div class="paper-title">Realization of Image Super-Resolution by Implementing Convolutional Neural Network on Sub-pixel</div>
+							<div class="paper-desc">Bachelor thesis, 2018</div>
+							<div class="paper-authors"></div>
+							<div>
+								<!-- <a href="subpage/abstract_beng.html">Abstract</a> | -->
+								<a href="docs/theses/2018_BEng_thesis.pdf">Thesis</a>
+							</div>
+						</div>
+					</div>
 
-                        <div class="row vspace-top-news">
-                            <div class="col">
-                                <div class="paper-title">PLENary multi-User developMent arena for future industrial workspaces (PLENUM)</div>
-                                <div class="paper-desc">VINNOVA, 2022-2025</div>
-                                <div>
-                                    <a href="https://www.vinnova.se/en/p/plenum---plenary-multi-user-development-arena-for-future-industrial-workspaces/">Webpage</a>
-                                </div>
-                            </div>
-                        </div>
+					<!-- List of research projects -->
+					<div id="project" class="vspace-top">
+						<h1>Research Projects</h1>
 
-                        <div class="row vspace-top-news">
-                            <div class="col">
-                                <div class="paper-title">Boosting the Exploitation of Standardisation Inputs from European Projects (STAND4EU)</div>
-                                <div class="paper-desc">EU, 2022-2024</div>
-                                <div>
-                                    <a href="https://stand4eu.eu/">Webpage</a>
-                                </div>
-                            </div>
-                        </div>
+						<div class="row vspace-top-news">
+							<div class="col">
+								<div class="paper-title">Code Agents: AI-powered end-to-end solutions for flexible manufacturing</div>
+								<div class="paper-desc">VINNOVA, 2024-2025</div>
+								<div>
+									<a href="https://www.vinnova.se/en/p/code-agents-ai-powered-end-to-end-solutions-for-flexible-manufacturing/">Webpage</a>
+								</div>
+							</div>
+						</div>
 
-                        <div class="row vspace-top-news">
-                            <!-- <div class="col-sm-3">
+						<div class="row vspace-top-news">
+							<div class="col">
+								<div class="paper-title">PLENary multi-User developMent arena for future industrial workspaces (PLENUM)</div>
+								<div class="paper-desc">VINNOVA, 2022-2025</div>
+								<div>
+									<a href="https://www.vinnova.se/en/p/plenum---plenary-multi-user-development-arena-for-future-industrial-workspaces/">Webpage</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="row vspace-top-news">
+							<div class="col">
+								<div class="paper-title">Boosting the Exploitation of Standardisation Inputs from European Projects (STAND4EU)</div>
+								<div class="paper-desc">EU, 2022-2024</div>
+								<div>
+									<a href="https://stand4eu.eu/">Webpage</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="row vspace-top-news">
+							<!-- <div class="col-sm-3">
                                 <img src="imgs/ewass.jpg" class="img-fluid" />
                             </div> -->
-                            <div class="col">
-                                <div class="paper-title">Empowering Human Workers for Assembly of Wire Harnesses (EWASS)</div>
-                                <div class="paper-desc">VINNOVA, 2022-2025</div>
-                                <div>
-                                    <a href="https://produktion2030.se/en/projekt/empowering-human-workers-assembly-wire-harnesses-ewass/">Webpage</a>
-                                </div>
-                            </div>
-                        </div>
+							<div class="col">
+								<div class="paper-title">Empowering Human Workers for Assembly of Wire Harnesses (EWASS)</div>
+								<div class="paper-desc">VINNOVA, 2022-2025</div>
+								<div>
+									<a href="https://produktion2030.se/en/projekt/empowering-human-workers-assembly-wire-harnesses-ewass/">Webpage</a>
+								</div>
+							</div>
+						</div>
 
-                        <div class="row vspace-top-news">
-                            <!-- <div class="col-sm-3">
+						<div class="row vspace-top-news">
+							<!-- <div class="col-sm-3">
                                 <img src="imgs/digitalis.webp" class="img-fluid" />
                             </div> -->
-                            <div class="col">
-                                <div class="paper-title">DIGITAL work InStructions for cognitive work (DIGITALIS)</div>
-                                <div class="paper-desc">VINNOVA, 2022-2024</div>
-                                <div>
-                                    <a href="https://produktion2030.se/en/projekt/digital-work-instructions-cognitive-work-digitalis/">Webpage</a>
-                                </div>
-                            </div>
-                        </div>
+							<div class="col">
+								<div class="paper-title">DIGITAL work InStructions for cognitive work (DIGITALIS)</div>
+								<div class="paper-desc">VINNOVA, 2022-2024</div>
+								<div>
+									<a href="https://produktion2030.se/en/projekt/digital-work-instructions-cognitive-work-digitalis/">Webpage</a>
+								</div>
+							</div>
+						</div>
 
-                        <div class="row vspace-top-news">
-                            <div class="col">
-                                <div class="paper-title">A Pan-European Network of Robotics DIHs for Agile Production (DIH<SUP>2</SUP>)</div>
-                                <div class="paper-desc">EU, 2019-2023</div>
-                                <div>
-                                    <a href="https://www.dih-squared.eu/">Webpage</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+						<div class="row vspace-top-news">
+							<div class="col">
+								<div class="paper-title">A Pan-European Network of Robotics DIHs for Agile Production (DIH<sup>2</sup>)</div>
+								<div class="paper-desc">EU, 2019-2023</div>
+								<div>
+									<a href="https://www.dih-squared.eu/">Webpage</a>
+								</div>
+							</div>
+						</div>
+					</div>
 
-                    <!-- List of research activities -->
-                    <div id="experience" class="vspace-top">
-                        <h1>Other Research Experience</h1>
-                        <div class="row vspace-top-news">
-                            <!-- <div class="col-sm-2 news-date">&emsp;&emsp;&emsp;<img src="../imgs/casia_logo.png" width="50%" class="img-fluid" /></div> -->
-                            <div class="col">
-                                <b>Research Intern</b>, Oct. 2019 - June 2021
-                                <br />
-                                Center for Biometrics and Security Research (CBSR) & National Laboratory of Pattern Recognition (NLPR)
-                                <br />
-                                Institute of Automation, Chinese Academy of Sciences (CASIA)
-                            </div>
-                        </div>
-                        <div class="row vspace-top-news">
-                            <!-- <div class="col-sm-2 news-date">&emsp;&emsp;&emsp; <img src="../imgs/bupt_logo.png" width="50%" class="img-fluid" /></div> -->
-                            <div class="col">
-                                <b>Undergraduate Research Assistant</b>, May 2017 - Oct. 2017
-                                <br />
-                                Next Generation Internet Research Center
-                                <br />
-                                Beijing University of Posts and Telecommunications (BUPT)
-                            </div>
-                        </div>
-                    </div>
+					<!-- List of research activities -->
+					<div id="experience" class="vspace-top">
+						<h1>Other Research Experience</h1>
+						<div class="row vspace-top-news">
+							<!-- <div class="col-sm-2 news-date">&emsp;&emsp;&emsp;<img src="../imgs/casia_logo.png" width="50%" class="img-fluid" /></div> -->
+							<div class="col">
+								<b>Research Intern</b>, Oct. 2019 - June 2021
+								<br />
+								Center for Biometrics and Security Research (CBSR) & National Laboratory of Pattern Recognition (NLPR)
+								<br />
+								Institute of Automation, Chinese Academy of Sciences (CASIA)
+							</div>
+						</div>
+						<div class="row vspace-top-news">
+							<!-- <div class="col-sm-2 news-date">&emsp;&emsp;&emsp; <img src="../imgs/bupt_logo.png" width="50%" class="img-fluid" /></div> -->
+							<div class="col">
+								<b>Undergraduate Research Assistant</b>, May 2017 - Oct. 2017
+								<br />
+								Next Generation Internet Research Center
+								<br />
+								Beijing University of Posts and Telecommunications (BUPT)
+							</div>
+						</div>
+					</div>
 
-                    <div id="contact" class="vspace-top">
-                        <h1>Contact</h1>
-                        <div class="vspace-top-news">
-                            Feel free to get in touch! I'll get back to you ASAP :D
-                            <br />
-                            <br />
-                            &emsp;<a href="mailto:haowang@chalmers.se"><i class="far fa-envelope" style="font-size: 24px; color: #4f6071"></i></a> &emsp;<a href="https://orcid.org/0000-0003-3847-524X"><i class="fab fa-orcid" style="font-size: 24px; color: #4f6071"></i></a> &emsp;<a
-                                href="https://github.com/HWANG7308"
-                                ><i class="fab fa-github" style="font-size: 24px; color: #4f6071"></i
-                            ></a>
-                            &emsp;<a href="https://www.linkedin.com/in/haowang-chalmers"><i class="fab fa-linkedin-in" style="font-size: 24px; color: #4f6071"></i></a>
-                            <!-- &emsp;<a href="https://www.facebook.com/profile.php?id=100007039683298"><i class="fab fa-facebook-f" style="font-size: 24px; color: #4f6071"></i></a> -->
-                            <!-- &emsp;<a href="https://www.instagram.com/1wang1hao1/"><i class="fab fa-instagram" style="font-size: 24px; color: #4f6071"></i></a> -->
-                            <!-- &emsp;<a href="https://twitter.com/HW7308"><i class="fab fa-twitter" style="font-size: 24px; color: #4F6071;"></i></a> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Back to top -->
-            <div class="vspace-top">
-                <a href="index.html" style="display: block; text-align: center">[Back to Top]</a>
-            </div>
-        </div>
+					<div id="contact" class="vspace-top">
+						<h1>Contact</h1>
+						<div class="vspace-top-news">
+							Feel free to get in touch! I'll get back to you ASAP :D
+							<br />
+							<br />
+							&emsp;<a href="mailto:haowang@chalmers.se"><i class="far fa-envelope" style="font-size: 24px; color: #4f6071"></i></a> &emsp;<a href="https://orcid.org/0000-0003-3847-524X"><i class="fab fa-orcid" style="font-size: 24px; color: #4f6071"></i></a> &emsp;<a
+								href="https://github.com/HWANG7308"
+								><i class="fab fa-github" style="font-size: 24px; color: #4f6071"></i
+							></a>
+							&emsp;<a href="https://www.linkedin.com/in/haowang-chalmers"><i class="fab fa-linkedin-in" style="font-size: 24px; color: #4f6071"></i></a>
+							<!-- &emsp;<a href="https://www.facebook.com/profile.php?id=100007039683298"><i class="fab fa-facebook-f" style="font-size: 24px; color: #4f6071"></i></a> -->
+							<!-- &emsp;<a href="https://www.instagram.com/1wang1hao1/"><i class="fab fa-instagram" style="font-size: 24px; color: #4f6071"></i></a> -->
+							<!-- &emsp;<a href="https://twitter.com/HW7308"><i class="fab fa-twitter" style="font-size: 24px; color: #4F6071;"></i></a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Back to top -->
+			<div class="vspace-top">
+				<a href="index.html" style="display: block; text-align: center">[Back to Top]</a>
+			</div>
+		</div>
 
-        <!-- <div id='footer' class='vspace-top'>
+		<!-- <div id='footer' class='vspace-top'>
         <center> Hao Wang &copy; 2019 </center>
     </div> -->
 
-        <div id="footer" class="vspace-top">
-            <center>
-                <script language="Javascript">
-                    var dd = document.lastModified;
-                    var pp = new Date(dd);
-                    document.write("Last Updated: " + pp.getFullYear() + "-" + (pp.getMonth() + 1) + "-" + pp.getDate());
-                </script>
-            </center>
-        </div>
+		<div id="footer" class="vspace-top">
+			<center>
+				<script language="Javascript">
+					var dd = document.lastModified;
+					var pp = new Date(dd);
+					document.write("Last Updated: " + pp.getFullYear() + "-" + (pp.getMonth() + 1) + "-" + pp.getDate());
+				</script>
+			</center>
+		</div>
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/bootstrap.min.js"></script>
-    </body>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
 </html>
